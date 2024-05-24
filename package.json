@@ -4,9 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.27.0",
+    "pg": "^8.11.5",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "@swc-node/register": "^1.9.1",
+    "@swc/helpers": "^0.5.11",
+    "@types/node": "^20.12.12",
+    "mocha": "^10.4.0",
+    "typescript": "^5.4.5"
+  }
 }
