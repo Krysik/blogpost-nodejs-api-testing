@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "echo \"Error: no test specified\" && exit 1"
+    "start": "node -r @swc-node/register --watch src/main.ts",
+    "build": "tsc",
+    "test:integration": "./test-env.sh mocha --config ./src/spec/.mocharc.spec.js"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +20,10 @@
   "devDependencies": {
     "@swc-node/register": "^1.9.1",
     "@swc/helpers": "^0.5.11",
+    "@types/chai": "^4.3.16",
+    "@types/mocha": "^10.0.7",
     "@types/node": "^20.12.12",
+    "chai": "^4.5.0",
     "mocha": "^10.4.0",
     "typescript": "^5.4.5"
   }
