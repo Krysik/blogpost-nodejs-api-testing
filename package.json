@@ -2,7 +2,6 @@
   "name": "nodejs-api-testing",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "node -r @swc-node/register --watch src/main.ts",
     "build": "tsc",
