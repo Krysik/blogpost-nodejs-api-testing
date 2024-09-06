@@ -6,15 +6,12 @@
     "sourceMap": true,
     "strict": true,
     "alwaysStrict": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "experimentalDecorators": true,
     "outDir": "build",
-    "strictPropertyInitialization": false,
     "moduleResolution": "node",
-    "forceConsistentCasingInFileNames": true,
-    "noUncheckedIndexedAccess": true,
     "esModuleInterop": true,
+    "strictPropertyInitialization": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
   "include": ["./src"],
   "exclude": ["node_modules"]
