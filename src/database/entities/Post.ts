@@ -16,6 +16,6 @@ export class Post {
   @Column()
   content: string;
 
-  @CreateDateColumn({ type: 'timestamptz' })
+  @CreateDateColumn()
   createdAt: Date;
 }
