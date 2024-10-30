@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node -r @swc-node/register --watch src/main.ts",
     "build": "tsc",
-    "test:integration": "./test-env.sh mocha --config ./src/spec/.mocharc.spec.js"
+    "test:integration": "mocha --config ./src/spec/.mocharc.spec.js"
   },
   "keywords": [],
   "author": "",
