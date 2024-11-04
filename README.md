@@ -12,9 +12,12 @@ There are only two prerequisites. That is because I run every command within doc
 ## How to run
 
 1. Create a `.env` file based on the `.env.template` and fill in empty variables.
-2. Install dependencies with `docker-compose --rm app npm i`
+2. Install dependencies with `docker-compose run --rm app npm i`
 3. Run the app with `docker-compose up app`
-4. You can run tests with `docker-compose --rm app npm run test:integration -- --watch`
+
+## Testing
+
+You can run tests with `docker-compose run --rm app npm run test:integration -- --watch`. It runs mocha test runner in watch mode.
 
 ## Tech stack & tools
 
