@@ -1,6 +1,6 @@
-import { Post } from "./database/entities/Post";
-import { createTestApp } from "./spec/testApp";
-import { testDb } from "./spec/testDb";
+import { Post } from './database/entities/Post';
+import { createTestApp } from './spec/testApp';
+import { testDb } from './spec/testDb';
 import { expect } from 'chai';
 
 describe('GET /posts', () => {
@@ -25,9 +25,9 @@ describe('GET /posts', () => {
       method: 'GET',
       url: '/posts',
     });
-  
+
     expect(response.statusCode).to.equal(200);
-    
+
     const postResources = response.json().data;
     expect(postResources).to.have.deep.members([
       {
@@ -45,7 +45,7 @@ describe('GET /posts', () => {
     ]);
   });
 
-  it('should order posts by date of creation', async () => {
+  it('should order posts by date of creation in descending order', async () => {
     const testApp = await createTestApp();
     const postRepo = testDb.getRepository(Post);
 
@@ -75,7 +75,6 @@ describe('GET /posts', () => {
       method: 'GET',
       url: '/posts',
     });
-
 
     const postIds = response.json().data.map((post: any) => post.id);
     expect(postIds).to.be.deep.equal([
