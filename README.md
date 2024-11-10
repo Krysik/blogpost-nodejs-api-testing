@@ -1,6 +1,6 @@
 # nodejs-api-testing
 
-This repository contains a basic nodejs application which exposes a REST API using the [fastify](https://fastify.dev) framework. The code is used as an example in my blog post about testing - [link]().
+This repository contains a basic nodejs application which exposes a REST API using the [fastify](https://fastify.dev) framework. The code is used as an example in my blog post about testing - [link](https://medium.com/@marcin_krysinski/setup-test-environment-for-the-nodejs-rest-api-application-and-database-02f181c4368a).
 
 ## Prerequisite
 
